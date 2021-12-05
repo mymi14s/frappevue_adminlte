@@ -1,4 +1,4 @@
 {
-    "domain": "https://example.com",
-    "frappe_custom_app":"frappe_app"
+    "domain":  process.env.frappevue_domain,
+    "frappe_custom_app":process.env.frappevue_app
 }
