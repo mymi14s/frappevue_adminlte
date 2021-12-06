@@ -1,4 +1,5 @@
-import appConfig from '../appConfig';
+const dotenv = require('dotenv');
+dotenv.config();
 
 export default {
     name: 'utils',
@@ -13,7 +14,7 @@ export default {
             // this.stack = <call stack>;
         }
         async login(body){
-            let res = await fetch(`${this.url}/api/method/${appConfig.frappe_custom_app}.authentication.login`, {
+            let res = await fetch(`${this.url}/api/method/${process.env.frappevue_app}.authentication.login`, {
                 method: 'POST',
                 headers: this.headers,
                 body: JSON.stringify(body)
