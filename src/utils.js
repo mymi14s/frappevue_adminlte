@@ -92,7 +92,7 @@ export default {
             }
         }
         // DELETE doc
-        async delete_doc(doctype, body){
+        async delete_doc(doctype, docname){
             try {
                 this.getHeader();
                 let res = await fetch(`${this.url}/api/resource/${doctype}/${docname}`, {
