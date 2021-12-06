@@ -1,5 +1,6 @@
 # FrappeVue AdminLTE
 Vue-based AdminLTE dashboard for Frappe and ERPNext
+
 ## Features
 - AUTHENTICATION: Login is inbuilt by default and can be used as below:
     - this.$frappe.login({usr:'user': pwd:'password'}) //token based authentication is used     on successful login.
@@ -17,6 +18,9 @@ Vue-based AdminLTE dashboard for Frappe and ERPNext
     - formatCurrency(amount, currency)
     - this.popIt.error(title, message) // show error modal
     - this.popIt.success(title, message) // show success modal
+#### NOTE
+**this** keywork can be directly accessed in VUEJS component,
+this.$frappe can be redefined as let frappe = this.$frappe
 
 ## PROJECT SETUP
 - INITIAL CONFIGURATION
