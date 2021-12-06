@@ -7,7 +7,7 @@
             <router-link class="nav-link" data-widget="pushmenu" to="#" role="button"><i class="fas fa-bars"></i></router-link>
           </li>
           <li class="nav-item d-none d-sm-inline-block">
-            <router-link to="index3.html" class="nav-link">Home</router-link>
+            <router-link to="/" class="nav-link">Home</router-link>
           </li>
           <li class="nav-item d-none d-sm-inline-block">
             <router-link to="#" class="nav-link">Contact</router-link>
@@ -167,7 +167,7 @@
       <!-- Main Sidebar Container -->
       <aside class="main-sidebar sidebar-dark-primary elevation-4">
         <!-- Brand Logo -->
-        <router-link to="index3.html" class="brand-link">
+        <router-link to="/" class="brand-link">
           <img src="/static/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
           <span class="brand-text font-weight-light">AdminLTE 3</span>
         </router-link>
