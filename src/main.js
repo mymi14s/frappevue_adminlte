@@ -3,7 +3,7 @@ import App from './App.vue'
 import router from './router'
 import vueTheStorages from 'vue-the-storages'
 import utils from './utils';
-import appConfig from '../appConfig';
+import appConfig from '../.appConfig';
 
 let app = createApp(App)
 app.use(router)
