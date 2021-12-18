@@ -66,7 +66,7 @@
                 // $('#transactions-table').DataTable().destroy();
                 let res = await this.$frappe.get_list(
                     'Sales Invoice',
-                    'fields=["name", "title", "status", "modified", "grand_total", "currency"]&order_by="modified DESC"'
+                    'fields=["name", "title", "status", "modified", "grand_total", "currency"]&order_by=modified DESC&limit=1000'
                 );
                 console.log('res', res)
                 if(res.status_code==200){

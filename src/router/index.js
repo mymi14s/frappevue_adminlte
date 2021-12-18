@@ -22,7 +22,7 @@ const router = createRouter({
 
 let getToken = ()=>{
     try {
-        return JSON.parse(sessionStorage.frappUser).token;
+        return JSON.parse(localStorage.frappUser).token;
     } catch (e) {
         return null
     }

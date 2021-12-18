@@ -96,16 +96,16 @@
 
                     if(user && !user.status_code){
                         // set session
-                        this.$session.set('frappUser',
+                        localStorage.set('frappUser',
                             {
                                 token: user.token,
                                 userData: user.data
                             }
                         )
                         // redirect
-                        if (JSON.parse(sessionStorage.frappUser).token) {
+                        if (JSON.parse(localStorage.frappUser).token) {
                             this.$popIt.success('Success', 'Login Success')
-                            localStorage.clear();
+                            // localStorage.clear();
                             setTimeout(function () {
                                 window.location.href = '/'
                             }, 2000);

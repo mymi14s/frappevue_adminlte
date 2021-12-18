@@ -13,6 +13,7 @@ export default {
             // this.stack = <call stack>;
         }
         async login(body){
+
             let res = await fetch(`${this.url}/api/method/${appConfig.frappe_custom_app}.authentication.login`, {
                 method: 'POST',
                 headers: this.headers,
@@ -34,7 +35,7 @@ export default {
         }
         // get updated headers
         getHeader(){
-            let token = JSON.parse(sessionStorage.frappUser).token;
+            let token = JSON.parse(localStorage.frappUser).token;
             this.headers.Authorization = `token ${token}`
             // return this.headers;
         }

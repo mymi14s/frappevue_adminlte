@@ -16,11 +16,11 @@ app.config.globalProperties.$remoteUrl = remoteUrl;
 app.config.globalProperties.$frappe = new utils.Frappe(remoteUrl);
 // app.config.globalProperties.$getToken = () =>
 let getToken = ()=>{
-    return JSON.parse(sessionStorage.frappUser).token
+    return JSON.parse(localStorage.frappUser).token
 }
 let sessionUserData = ()=>{
     try {
-        return JSON.parse(sessionStorage.frappUser).userData;
+        return JSON.parse(localStorage.frappUser).userData;
     } catch (e) {
         return null
     } finally {
